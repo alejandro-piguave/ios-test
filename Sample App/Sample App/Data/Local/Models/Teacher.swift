@@ -14,7 +14,7 @@ enum TeacherType: String {
 
 class Teacher: CustomStringConvertible {
     var description: String {
-        return "Student data: \(name) \(email)"
+        return name
     }
     
     var name: String = ""
