@@ -10,6 +10,10 @@ import Foundation
 
 enum TeacherType: String {
     case intern, extern
+    
+    var description: String {
+        return self.rawValue
+    }
 }
 
 class Teacher: CustomStringConvertible {
