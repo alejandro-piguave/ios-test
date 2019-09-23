@@ -44,7 +44,6 @@
 		D93C310F2333FF7B001DD6EA = {
 			isa = PBXGroup;
 			children = (
-				D96C696223352BED000E08AF /* UI */,
 				D93C311A2333FF7B001DD6EA /* Sample App */,
 				D93C31192333FF7B001DD6EA /* Products */,
 			);
@@ -61,6 +60,7 @@
 		D93C311A2333FF7B001DD6EA /* Sample App */ = {
 			isa = PBXGroup;
 			children = (
+				D96C696223352BED000E08AF /* UI */,
 				D96C696123352B93000E08AF /* Resources */,
 				D96C696023352B85000E08AF /* Data */,
 				D96C695F23352B21000E08AF /* App */,
