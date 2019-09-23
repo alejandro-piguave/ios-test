@@ -8,7 +8,7 @@
 
 import Foundation
 
-let defaultStudents = [Student("Iván Anti", email: "ivan.anti@gmail.com",birthDate: Calendar.current.date(from: DateComponents(year: 1984, month: 3, day: 10)) ?? Date()),
+let defaultStudents = [Student("Iván Anti", email: "ivan.anti@gmail.es",birthDate: Calendar.current.date(from: DateComponents(year: 1984, month: 3, day: 10)) ?? Date()),
                        Student("Redmist", email: "redmist@yahoo.mx",birthDate: Calendar.current.date(from: DateComponents(year: 1995, month: 12, day: 1)) ?? Date()),
                        Student("Santiago",email: "santiago.herrera@outook.co",birthDate: Calendar.current.date(from: DateComponents(year: 1985, month: 4, day: 2)) ?? Date()),
                        Student("Ezequiel",email: "eze.eze@gmail.ar",birthDate: Calendar.current.date(from: DateComponents(year: 1994, month: 10, day: 2)) ?? Date()),
