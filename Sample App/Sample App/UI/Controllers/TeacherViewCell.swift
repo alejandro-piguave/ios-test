@@ -10,7 +10,18 @@ import UIKit
 
 class TeacherViewCell: UITableViewCell {
     
-    @IBOutlet weak var teacherView: UIView!
+    @IBOutlet weak var teacherView: UIView! {
+        didSet {
+            // corner radius
+            teacherView.layer.cornerRadius = 10
+            
+            // shadow
+            teacherView.layer.shadowColor = UIColor.black.cgColor
+            teacherView.layer.shadowOffset = CGSize(width: 3, height: 3)
+            teacherView.layer.shadowOpacity = 0.7
+            teacherView.layer.shadowRadius = 4.0
+        }
+    }
     @IBOutlet weak var teacherImage: UIImageView!
     @IBOutlet weak var teacherNameLabel: UILabel!
     @IBOutlet weak var teacherMailLabel: UILabel!
