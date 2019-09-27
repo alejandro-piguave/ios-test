@@ -36,8 +36,13 @@ extension StudentsViewController: UITableViewDelegate, UITableViewDataSource {
         
         cell.setData(defaultStudents[indexPath.row],indexPath.row)
         
-    
         return cell
     }
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let detailViewController = DetailViewController(nibName: "DetailViewController", bundle: nil)
+        detailViewController.mainLabelText = defaultStudents[indexPath.row].name
+        
+        navigationController?.pushViewController(detailViewController, animated: true)
+    }
 }

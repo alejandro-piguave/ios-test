@@ -65,6 +65,9 @@
                                 <state key="normal" title="Delete">
                                     <color key="titleColor" red="1" green="0.19687894810000001" blue="0.31252780099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="deleteElement:" destination="fQR-oa-oM8" eventType="touchDown" id="lVj-mo-mro"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N0v-IG-Dzr">
                                 <rect key="frame" x="20" y="192" width="47.5" height="21.5"/>
@@ -245,6 +248,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="C4b-wV-Sk6"/>
                     </view>
+                    <connections>
+                        <outlet property="collectionView1" destination="XSJ-VP-rvs" id="Kc3-MV-rcK"/>
+                        <outlet property="collectionView2" destination="CGN-P7-K6K" id="6Fh-vv-wZn"/>
+                        <outlet property="mainImageView" destination="iqg-XQ-uZi" id="oQF-kU-eiE"/>
+                        <outlet property="mainLabel" destination="kKi-94-fHH" id="FnE-ks-FLQ"/>
+                        <outlet property="nameLabel1" destination="N0v-IG-Dzr" id="Gy8-47-cBz"/>
+                        <outlet property="nameLabel2" destination="i0s-PK-doG" id="j8P-KY-3bL"/>
+                        <outlet property="secondaryLabel" destination="huR-cZ-5Ou" id="cps-qE-rA2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bWo-7C-WaE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
