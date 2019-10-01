@@ -8,12 +8,9 @@
 
 import Foundation
 
-class Subject: CustomStringConvertible{
-    var description: String {
-        return name
-    }
-    
+class Subject{
     var name: String = ""
+    var imagePath: String = ""
     var teachers: [Teacher] = []
     var students: [Student] = []
     var numTeachers: Int {
@@ -23,9 +20,10 @@ class Subject: CustomStringConvertible{
         return students.count
     }
     
-    convenience init(_ name: String, teachers: [Teacher] = [], students: [Student] = []){
+    convenience init(_ name: String,imagePath: String, teachers: [Teacher] = [], students: [Student] = []){
         self.init()
         
+        self.imagePath = imagePath
         self.name = name
         self.teachers = teachers
         self.students = students

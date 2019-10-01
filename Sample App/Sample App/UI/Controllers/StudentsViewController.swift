@@ -34,15 +34,24 @@ extension StudentsViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "StudentViewCell", for: indexPath)
             as! StudentViewCell
         
-        cell.setData(defaultStudents[indexPath.row],indexPath.row)
+        cell.setData(defaultStudents[indexPath.row])
         
         return cell
     }
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+}
+
+extension StudentsViewController {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let destination = segue.destination as? DetailViewController,
+            let cell = sender as? UITableViewCell,
+            let indexPath = tableView.indexPath(for: cell)
+            else{
+                return
+        }
         
-        let detailViewController = DetailViewController(nibName: "DetailViewController", bundle: nil)
-        detailViewController.mainLabelText = defaultStudents[indexPath.row].name
+        let student = defaultStudents[indexPath.row]
+        destination.student = student
         
-        navigationController?.pushViewController(detailViewController, animated: true)
     }
 }
+

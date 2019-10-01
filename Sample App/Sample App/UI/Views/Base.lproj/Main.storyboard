@@ -30,26 +30,26 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dKG-2H-QMv">
-                                                    <rect key="frame" x="12" y="12" width="390" height="127.5"/>
+                                                    <rect key="frame" x="12" y="12" width="390" height="128"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7Q9-hh-RhD">
-                                                            <rect key="frame" x="0.0" y="12" width="103.5" height="103.5"/>
+                                                            <rect key="frame" x="0.0" y="12" width="104" height="104"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="7Q9-hh-RhD" secondAttribute="height" multiplier="1:1" id="WNR-ut-JRh"/>
                                                                 <constraint firstAttribute="height" relation="lessThanOrEqual" constant="108" id="f4t-Aq-6Qc"/>
                                                             </constraints>
                                                         </imageView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="Amp-b3-AkN">
-                                                            <rect key="frame" x="115.5" y="12" width="274.5" height="103.5"/>
+                                                            <rect key="frame" x="116" y="12" width="274" height="104"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdH-kW-DHe">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="274.5" height="29"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="274" height="29"/>
                                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="749" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8vc-0Y-CCA">
-                                                                    <rect key="frame" x="0.0" y="89" width="274.5" height="14.5"/>
+                                                                    <rect key="frame" x="0.0" y="89" width="274" height="15"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
@@ -82,6 +82,7 @@
                                             <outlet property="studentMailLabel" destination="8vc-0Y-CCA" id="7KK-Yi-HJk"/>
                                             <outlet property="studentNameLabel" destination="bdH-kW-DHe" id="ViJ-qM-Fxi"/>
                                             <outlet property="studentView" destination="dKG-2H-QMv" id="72C-u2-bpX"/>
+                                            <segue destination="LJr-zi-PrM" kind="show" id="qrk-bY-2QK"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -146,26 +147,26 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tOQ-fs-IEe">
-                                                    <rect key="frame" x="12" y="12" width="390" height="127.5"/>
+                                                    <rect key="frame" x="12" y="12" width="390" height="128"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1Et-Xd-vGU">
-                                                            <rect key="frame" x="0.0" y="12" width="103.5" height="103.5"/>
+                                                            <rect key="frame" x="0.0" y="12" width="104" height="104"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" relation="lessThanOrEqual" constant="108" id="6SD-lx-sa3"/>
                                                                 <constraint firstAttribute="width" secondItem="1Et-Xd-vGU" secondAttribute="height" multiplier="1:1" id="BEZ-SJ-qDd"/>
                                                             </constraints>
                                                         </imageView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="EWR-ah-fg4">
-                                                            <rect key="frame" x="115.5" y="12" width="274.5" height="103.5"/>
+                                                            <rect key="frame" x="116" y="12" width="274" height="104"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F7V-Xq-KQf">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="274.5" height="29"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="274" height="29"/>
                                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="749" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tiO-Mp-h4d">
-                                                                    <rect key="frame" x="0.0" y="89" width="274.5" height="14.5"/>
+                                                                    <rect key="frame" x="0.0" y="89" width="274" height="15"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
@@ -198,6 +199,7 @@
                                             <outlet property="teacherMailLabel" destination="tiO-Mp-h4d" id="0zl-Jj-maD"/>
                                             <outlet property="teacherNameLabel" destination="F7V-Xq-KQf" id="6PU-wx-sUQ"/>
                                             <outlet property="teacherView" destination="tOQ-fs-IEe" id="TxQ-0S-xNW"/>
+                                            <segue destination="LJr-zi-PrM" kind="show" id="18C-wH-vgb"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -241,10 +243,10 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xLz-vk-2Lc">
-                                                    <rect key="frame" x="12" y="12" width="156" height="176"/>
+                                                    <rect key="frame" x="12" y="12" width="156" height="186"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8L6-bV-ccK">
-                                                            <rect key="frame" x="12" y="12" width="132" height="152"/>
+                                                            <rect key="frame" x="12" y="12" width="132" height="162"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nx4-YP-6Jx">
                                                                     <rect key="frame" x="0.0" y="0.0" width="132" height="132"/>
@@ -290,6 +292,7 @@
                                             <outlet property="subjectImage" destination="nx4-YP-6Jx" id="6eE-XJ-K0I"/>
                                             <outlet property="subjectNameLabel" destination="IkX-Vc-n1G" id="jfp-aM-Ooh"/>
                                             <outlet property="subjectView" destination="xLz-vk-2Lc" id="L6I-1C-ItR"/>
+                                            <segue destination="LJr-zi-PrM" kind="show" id="cXV-6f-v1U"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -313,10 +316,21 @@
             </objects>
             <point key="canvasLocation" x="960.86956521739137" y="724.55357142857144"/>
         </scene>
+        <!--Detail-->
+        <scene sceneID="d7U-PE-vPJ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Detail" id="LJr-zi-PrM" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GqN-Qb-ilA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1723" y="725"/>
+        </scene>
     </scenes>
     <resources>
         <image name="ic_tab_students" width="30" height="27"/>
         <image name="ic_tab_subjects" width="24" height="30"/>
         <image name="ic_tab_teachers" width="20" height="30"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="18C-wH-vgb"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -13,7 +13,7 @@
         <!--Detail View Controller-->
         <scene sceneID="cbb-ji-tmf">
             <objects>
-                <viewController id="fQR-oa-oM8" customClass="DetailViewController" customModule="Sample_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fQR-oa-oM8" customClass="DetailViewController" customModule="Sample_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pdM-dQ-jR6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -32,13 +32,13 @@
                                         <rect key="frame" x="128" y="12" width="274" height="104"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kKi-94-fHH">
-                                                <rect key="frame" x="0.0" y="0.0" width="61.5" height="64.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="61.5" height="34"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="huR-cZ-5Ou">
-                                                <rect key="frame" x="0.0" y="84.5" width="39.5" height="19.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="huR-cZ-5Ou">
+                                                <rect key="frame" x="0.0" y="54" width="50" height="50"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -96,10 +96,10 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NSF-97-UVo">
-                                                    <rect key="frame" x="12" y="12" width="156" height="186"/>
+                                                    <rect key="frame" x="12" y="12" width="156" height="216"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Xv-Rs-OHS">
-                                                            <rect key="frame" x="12" y="12" width="132" height="162"/>
+                                                            <rect key="frame" x="12" y="12" width="132" height="192"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZYv-hL-KBe">
                                                                     <rect key="frame" x="0.0" y="0.0" width="132" height="132"/>
@@ -155,7 +155,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="CGN-P7-K6K">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="CGN-P7-K6K">
                                 <rect key="frame" x="20" y="535" width="374" height="240"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -240,22 +240,23 @@
                             <constraint firstItem="CGN-P7-K6K" firstAttribute="top" secondItem="i0s-PK-doG" secondAttribute="bottom" constant="20" id="HCl-4s-gag"/>
                             <constraint firstItem="N0v-IG-Dzr" firstAttribute="top" secondItem="Jh7-gm-hS5" secondAttribute="bottom" constant="20" id="RU0-Zk-eRt"/>
                             <constraint firstItem="i0s-PK-doG" firstAttribute="top" secondItem="XSJ-VP-rvs" secondAttribute="bottom" constant="20" id="YBB-ue-qvY"/>
-                            <constraint firstItem="Jh7-gm-hS5" firstAttribute="top" secondItem="C4b-wV-Sk6" secondAttribute="top" id="cGY-07-V5f"/>
                             <constraint firstItem="XSJ-VP-rvs" firstAttribute="top" secondItem="N0v-IG-Dzr" secondAttribute="bottom" constant="20" id="lPr-5o-kXj"/>
                             <constraint firstItem="i0s-PK-doG" firstAttribute="leading" secondItem="C4b-wV-Sk6" secondAttribute="leading" constant="20" id="mMH-wE-Ykv"/>
                             <constraint firstItem="CGN-P7-K6K" firstAttribute="leading" secondItem="C4b-wV-Sk6" secondAttribute="leading" constant="20" id="npK-Eu-hk8"/>
                             <constraint firstItem="Jh7-gm-hS5" firstAttribute="leading" secondItem="C4b-wV-Sk6" secondAttribute="leading" id="wkN-Og-FWz"/>
+                            <constraint firstItem="Jh7-gm-hS5" firstAttribute="top" secondItem="C4b-wV-Sk6" secondAttribute="top" id="xC8-eI-7gR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="C4b-wV-Sk6"/>
                     </view>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="collectionView1" destination="XSJ-VP-rvs" id="Kc3-MV-rcK"/>
-                        <outlet property="collectionView2" destination="CGN-P7-K6K" id="6Fh-vv-wZn"/>
                         <outlet property="mainImageView" destination="iqg-XQ-uZi" id="oQF-kU-eiE"/>
                         <outlet property="mainLabel" destination="kKi-94-fHH" id="FnE-ks-FLQ"/>
                         <outlet property="nameLabel1" destination="N0v-IG-Dzr" id="Gy8-47-cBz"/>
                         <outlet property="nameLabel2" destination="i0s-PK-doG" id="j8P-KY-3bL"/>
                         <outlet property="secondaryLabel" destination="huR-cZ-5Ou" id="cps-qE-rA2"/>
+                        <outletCollection property="collectionViews" destination="XSJ-VP-rvs" collectionClass="NSMutableArray" id="ZFz-01-kpW"/>
+                        <outletCollection property="collectionViews" destination="CGN-P7-K6K" collectionClass="NSMutableArray" id="0WS-N0-ppV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bWo-7C-WaE" userLabel="First Responder" sceneMemberID="firstResponder"/>

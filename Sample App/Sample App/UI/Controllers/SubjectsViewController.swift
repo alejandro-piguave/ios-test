@@ -21,14 +21,15 @@ class SubjectsViewController: UIViewController{
 
 extension SubjectsViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return subjects.count
+        return defaultSubjects.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SubjectViewCell", for: indexPath)
             as! SubjectViewCell
         
-        cell.setData(subjects[indexPath.row])
+        let subject = defaultSubjects[indexPath.row]
+        cell.setData(name: subject.name, imagePath: subject.imagePath)
         
         return cell
     }
@@ -49,5 +50,20 @@ extension SubjectsViewController: UICollectionViewDelegate, UICollectionViewData
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let cellWidth = (UIScreen.main.bounds.width - 16.0) / 2.0
         return CGSize(width: cellWidth, height:  cellWidth * 1.25)
+    }
+}
+
+extension SubjectsViewController {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let destination = segue.destination as? DetailViewController,
+        let cell = sender as? UICollectionViewCell,
+        let indexPath = collectionView.indexPath(for: cell)
+        else{
+            return
+        }
+        
+        let subject = defaultSubjects[indexPath.row]
+        destination.subject = subject
+        
     }
 }

@@ -30,9 +30,9 @@ class SubjectViewCell: UICollectionViewCell {
         subjectNameLabel.text = nil
     }
     
-    func setData(_ subject: Subject) {
-        subjectNameLabel.text = subject.name
-        subjectImage.image = UIImage(named: "img_subject_\(subject.name.lowercased())")
+    func setData(name: String, imagePath: String) {
+        subjectNameLabel.text = name
+        subjectImage.image = UIImage(named: imagePath)
     }
 }
 

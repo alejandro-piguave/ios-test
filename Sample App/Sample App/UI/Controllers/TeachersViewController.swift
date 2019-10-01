@@ -31,10 +31,23 @@ extension TeachersViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TeacherViewCell", for: indexPath)
             as! TeacherViewCell
         
-        cell.setData(defaultTeachers[indexPath.row],indexPath.row)
-        
-        print("Creating teacher cell number \(indexPath.row)")
+        cell.setData(defaultTeachers[indexPath.row])
         return cell
     }
     
+}
+
+extension TeachersViewController {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let destination = segue.destination as? DetailViewController,
+            let cell = sender as? UITableViewCell,
+            let indexPath = tableView.indexPath(for: cell)
+            else{
+                return
+        }
+        
+        let teacher = defaultTeachers[indexPath.row]
+        destination.teacher = teacher
+        
+    }
 }

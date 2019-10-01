@@ -14,6 +14,8 @@
 		D96C69682335352E000E08AF /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96C69672335352E000E08AF /* Student.swift */; };
 		D96C696A233546AA000E08AF /* Teacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96C6969233546AA000E08AF /* Teacher.swift */; };
 		D96C696C233547DA000E08AF /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96C696B233547DA000E08AF /* Subject.swift */; };
+		D971420B2343A3EB00751518 /* Test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D971420A2343A3EB00751518 /* Test.storyboard */; };
+		D971420D2343A82D00751518 /* MainNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D971420C2343A82D00751518 /* MainNavController.swift */; };
 		D9847044233BB12700998F78 /* StudentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9847043233BB12700998F78 /* StudentsViewController.swift */; };
 		D9847046233BBBE800998F78 /* DefaultData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9847045233BBBE800998F78 /* DefaultData.swift */; };
 		D9847048233BC32900998F78 /* TeachersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9847047233BC32900998F78 /* TeachersViewController.swift */; };
@@ -36,6 +38,8 @@
 		D96C69672335352E000E08AF /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		D96C6969233546AA000E08AF /* Teacher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Teacher.swift; sourceTree = "<group>"; };
 		D96C696B233547DA000E08AF /* Subject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
+		D971420A2343A3EB00751518 /* Test.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Test.storyboard; sourceTree = "<group>"; };
+		D971420C2343A82D00751518 /* MainNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavController.swift; sourceTree = "<group>"; };
 		D9847043233BB12700998F78 /* StudentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsViewController.swift; sourceTree = "<group>"; };
 		D9847045233BBBE800998F78 /* DefaultData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultData.swift; sourceTree = "<group>"; };
 		D9847047233BC32900998F78 /* TeachersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeachersViewController.swift; sourceTree = "<group>"; };
@@ -126,6 +130,7 @@
 				D93C311F2333FF7B001DD6EA /* Main.storyboard */,
 				D93C31242333FF7C001DD6EA /* LaunchScreen.storyboard */,
 				D98B38D8233E6984001B1EE6 /* Detail.storyboard */,
+				D971420A2343A3EB00751518 /* Test.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -141,6 +146,7 @@
 				D984704D233BEB1000998F78 /* TeacherViewCell.swift */,
 				D984704F233BEB1900998F78 /* SubjectViewCell.swift */,
 				D98B38DA233E6A0C001B1EE6 /* DetailViewController.swift */,
+				D971420C2343A82D00751518 /* MainNavController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -226,6 +232,7 @@
 				D93C31232333FF7C001DD6EA /* Assets.xcassets in Resources */,
 				D93C31212333FF7B001DD6EA /* Main.storyboard in Resources */,
 				D98B38D9233E6984001B1EE6 /* Detail.storyboard in Resources */,
+				D971420B2343A3EB00751518 /* Test.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +253,7 @@
 				D984704C233BD62A00998F78 /* StudentViewCell.swift in Sources */,
 				D9847050233BEB1900998F78 /* SubjectViewCell.swift in Sources */,
 				D984704A233BC34000998F78 /* SubjectsViewController.swift in Sources */,
+				D971420D2343A82D00751518 /* MainNavController.swift in Sources */,
 				D9847048233BC32900998F78 /* TeachersViewController.swift in Sources */,
 				D96C69682335352E000E08AF /* Student.swift in Sources */,
 				D93C311C2333FF7B001DD6EA /* AppDelegate.swift in Sources */,

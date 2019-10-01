@@ -33,10 +33,10 @@ class StudentViewCell: UITableViewCell {
         studentMailLabel.text = nil
     }
     
-    func setData(_ student: Student, _ index: Int) {
+    func setData(_ student: Student) {
         studentNameLabel.text = student.name
         studentMailLabel.text = student.email
-        studentImage.image = UIImage(named: "img_student_\(index + 1)")
+        studentImage.image = UIImage(named: student.imagePath)
     }
 }
 
