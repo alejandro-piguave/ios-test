@@ -32,7 +32,12 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         configureHeader()
         configureCollectionViews()
-        
+        tabBarController?.tabBar.isHidden = true
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        tabBarController?.tabBar.isHidden = false
     }
     
     func configureHeader() {
