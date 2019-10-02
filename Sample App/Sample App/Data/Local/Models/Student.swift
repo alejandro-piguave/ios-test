@@ -8,15 +8,8 @@
 
 import Foundation
 
-class Student: Hashable {
+class Student: Person {
     
-    static func == (lhs: Student, rhs: Student) -> Bool {
-        return ObjectIdentifier(lhs) == ObjectIdentifier(rhs)
-    }
-    
-    func hash(into hasher: inout Hasher) {
-        return hasher.combine(ObjectIdentifier(self))
-    }
     
     var subjects: [Subject] {
         get {
@@ -31,17 +24,11 @@ class Student: Hashable {
         }
     }
     
-    var name: String = ""
-    var email: String = ""
-    var imagePath: String = ""
     var birthDate: Date = Date()
     
     convenience init(_ name: String = "", email: String = "", imagePath: String = "", birthDate: Date = Date()) {
-        self.init()
+        self.init(name, email, imagePath)
         
-        self.name = name
-        self.email = email
-        self.imagePath = imagePath
         self.birthDate = birthDate
         
         

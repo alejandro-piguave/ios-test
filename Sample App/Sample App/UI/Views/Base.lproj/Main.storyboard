@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="StudentViewCell" rowHeight="152" id="dsZ-PF-XAp" customClass="StudentViewCell" customModule="Sample_App" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PersonViewCell" rowHeight="152" id="dsZ-PF-XAp" customClass="PersonViewCell" customModule="Sample_App" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="152"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dsZ-PF-XAp" id="At3-FR-hvL">
@@ -78,10 +78,10 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="studentImage" destination="7Q9-hh-RhD" id="oRh-zr-332"/>
-                                            <outlet property="studentMailLabel" destination="8vc-0Y-CCA" id="7KK-Yi-HJk"/>
-                                            <outlet property="studentNameLabel" destination="bdH-kW-DHe" id="ViJ-qM-Fxi"/>
-                                            <outlet property="studentView" destination="dKG-2H-QMv" id="72C-u2-bpX"/>
+                                            <outlet property="personImage" destination="7Q9-hh-RhD" id="z0a-k1-DXd"/>
+                                            <outlet property="personMailLabel" destination="8vc-0Y-CCA" id="Z5P-0F-Y2c"/>
+                                            <outlet property="personNameLabel" destination="bdH-kW-DHe" id="d30-pO-yc9"/>
+                                            <outlet property="personView" destination="dKG-2H-QMv" id="cgb-PS-LXc"/>
                                             <segue destination="LJr-zi-PrM" kind="show" id="qrk-bY-2QK"/>
                                         </connections>
                                     </tableViewCell>
@@ -104,7 +104,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="893" y="1505"/>
+            <point key="canvasLocation" x="51" y="1505"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="QKJ-qW-CZI">
@@ -139,7 +139,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TeacherViewCell" rowHeight="152" id="wbD-QE-Jr1" customClass="TeacherViewCell" customModule="Sample_App" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PersonViewCell" rowHeight="152" id="wbD-QE-Jr1" customClass="PersonViewCell" customModule="Sample_App" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="152"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wbD-QE-Jr1" id="pb0-Hd-Fcc">
@@ -195,10 +195,10 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="teacherImage" destination="1Et-Xd-vGU" id="7E9-5H-TVC"/>
-                                            <outlet property="teacherMailLabel" destination="tiO-Mp-h4d" id="0zl-Jj-maD"/>
-                                            <outlet property="teacherNameLabel" destination="F7V-Xq-KQf" id="6PU-wx-sUQ"/>
-                                            <outlet property="teacherView" destination="tOQ-fs-IEe" id="TxQ-0S-xNW"/>
+                                            <outlet property="personImage" destination="1Et-Xd-vGU" id="0Z9-Au-a7k"/>
+                                            <outlet property="personMailLabel" destination="tiO-Mp-h4d" id="WkF-Fb-Yl3"/>
+                                            <outlet property="personNameLabel" destination="F7V-Xq-KQf" id="G71-tT-vhz"/>
+                                            <outlet property="personView" destination="tOQ-fs-IEe" id="8KF-zo-xRl"/>
                                             <segue destination="LJr-zi-PrM" kind="show" id="18C-wH-vgb"/>
                                         </connections>
                                     </tableViewCell>
@@ -314,7 +314,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BVU-Yk-xPl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="51" y="1505"/>
+            <point key="canvasLocation" x="942" y="1505"/>
         </scene>
         <!--Detail-->
         <scene sceneID="d7U-PE-vPJ">
@@ -341,7 +341,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Pj-Cu-mbr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="893" y="753"/>
+            <point key="canvasLocation" x="51" y="753"/>
         </scene>
         <!--Teachers-->
         <scene sceneID="bkf-xV-gLn">
@@ -379,7 +379,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gyy-nC-wPA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="51" y="753"/>
+            <point key="canvasLocation" x="943" y="753"/>
         </scene>
     </scenes>
     <resources>

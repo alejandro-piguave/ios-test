@@ -15,6 +15,10 @@ class TeachersViewController: UIViewController{
         super.viewDidLoad()
         configureTableView()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        tableView.reloadData()
+    }
 }
 
 extension TeachersViewController: UITableViewDelegate, UITableViewDataSource {
@@ -28,10 +32,11 @@ extension TeachersViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TeacherViewCell", for: indexPath)
-            as! TeacherViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PersonViewCell", for: indexPath)
+            as! PersonViewCell
         
-        cell.setData(defaultTeachers[indexPath.row])
+        let teacher = defaultTeachers[indexPath.row]
+        cell.setData(teacher)
         return cell
     }
     

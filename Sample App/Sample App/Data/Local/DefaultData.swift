@@ -8,7 +8,7 @@
 
 import Foundation
 
-let defaultStudents = [Student("Iván Anti", email: "ivan.anti@gmail.com", imagePath: "img_student_1", birthDate: Calendar.current.date(from: DateComponents(year: 1984, month: 3, day: 10)) ?? Date()),
+var defaultStudents = [Student("Iván Anti", email: "ivan.anti@gmail.com", imagePath: "img_student_1", birthDate: Calendar.current.date(from: DateComponents(year: 1984, month: 3, day: 10)) ?? Date()),
                        Student("Redmist", email: "redmist@yahoo.mx",imagePath: "img_student_2",birthDate: Calendar.current.date(from: DateComponents(year: 1995, month: 12, day: 1)) ?? Date()),
                        Student("Santiago",email: "santiago.herrera@outook.co",imagePath: "img_student_3",birthDate: Calendar.current.date(from: DateComponents(year: 1985, month: 4, day: 2)) ?? Date()),
                        Student("Ezequiel",email: "eze.eze@gmail.ar",imagePath: "img_student_4",birthDate: Calendar.current.date(from: DateComponents(year: 1994, month: 10, day: 2)) ?? Date()),
@@ -16,13 +16,13 @@ let defaultStudents = [Student("Iván Anti", email: "ivan.anti@gmail.com", image
                        Student("Joselu",email: "pepelu23@gmail.com",imagePath: "img_student_6",birthDate: Calendar.current.date(from: DateComponents(year: 1993, month: 9, day: 26)) ?? Date()),
                        Student("José Fuenmayor", email: "jose.fuenmayor@gmail.mx",imagePath: "img_student_7",birthDate: Calendar.current.date(from: DateComponents(year: 1987, month: 6, day: 18)) ?? Date()), ]
 
-let defaultTeachers = [Teacher("La de inglés", email:"rgoslinglopez@gmail.com",imagePath: "img_teacher_1", type: TeacherType.extern),
+var defaultTeachers = [Teacher("La de inglés", email:"rgoslinglopez@gmail.com",imagePath: "img_teacher_1", type: TeacherType.extern),
                        Teacher("El nuevo", email:"profenuevo@gmail.com",imagePath: "img_teacher_2", type: TeacherType.intern),
                        Teacher("Horacio Silvestre", email: "horacio.silvestre@gmail.com",imagePath: "img_teacher_3", type: TeacherType.intern),
                        Teacher("Pedro Murcia", email: "pedro.murcia@gmail.com", imagePath: "img_teacher_4",type: TeacherType.extern),
                        Teacher("Ángel Beleña",email:"angel.belena@gmail.com",imagePath: "img_teacher_5", type: TeacherType.extern)]
 
-let defaultSubjects = [
+var defaultSubjects = [
     Subject("Android",imagePath: "img_subject_android",teachers: defaultTeachers.filter({ $0.name.contains("a")
     }), students: defaultStudents.filter({ $0.name.contains("u")
     })),

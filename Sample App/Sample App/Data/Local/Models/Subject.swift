@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Subject{
+class Subject: Hashable{
     var name: String = ""
     var imagePath: String = ""
     var teachers: [Teacher] = []
@@ -18,6 +18,14 @@ class Subject{
     }
     var numStudents: Int {
         return students.count
+    }
+    
+    static func == (lhs: Subject, rhs: Subject) -> Bool {
+        return ObjectIdentifier(lhs) == ObjectIdentifier(rhs)
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        return hasher.combine(ObjectIdentifier(self))
     }
     
     convenience init(_ name: String,imagePath: String, teachers: [Teacher] = [], students: [Student] = []){

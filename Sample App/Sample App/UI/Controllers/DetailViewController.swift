@@ -22,10 +22,30 @@ class DetailViewController: UIViewController {
     var subject: Subject? = nil
     var teacher: Teacher? = nil
     var student: Student? = nil
-    
+    var stringElement: String = ""
     
     @IBAction func deleteElement(_ sender: UIButton) {
         
+        
+        let alertController = UIAlertController(title: "Atención", message: "¿Estás seguro de que quieres eliminar \(stringElement)?", preferredStyle: UIAlertController.Style.alert)
+        
+        alertController.addAction(UIAlertAction(title: "Cancelar", style: .default, handler: nil))
+        
+        alertController.addAction(UIAlertAction(title: "Eliminar", style: .destructive, handler: { (UIAlertAction) in
+            if let trueStudent = self.student, let index = defaultStudents.firstIndex(of: trueStudent){
+                defaultStudents.remove(at: index)
+                
+            } else if let trueTeacher = self.teacher, let index = defaultTeachers.firstIndex(of: trueTeacher) {
+                defaultTeachers.remove(at: index)
+            } else if let trueSubject = self.subject, let index = defaultSubjects.firstIndex(of: trueSubject) {
+                defaultSubjects.remove(at: index)
+            }
+            
+            self.navigationController?.popViewController(animated: true)
+        }))
+        
+        present(alertController, animated: true)
+        navigationController?.popViewController(animated: true)
     }
     
     override func viewDidLoad() {
@@ -47,17 +67,20 @@ class DetailViewController: UIViewController {
             secondaryLabel.text = trueStudent.email
             nameLabel1.text = "Teachers"
             nameLabel2.text = "Subjects"
+            stringElement = "este estudiante"
         } else if let trueTeacher = teacher {
             mainImageView.image = UIImage(named: trueTeacher.imagePath)
             mainLabel.text = trueTeacher.name
             secondaryLabel.text = trueTeacher.email
             nameLabel1.text = "Subjects"
             nameLabel2.text = "Students"
+            stringElement = "este profesor"
         } else if let trueSubject = subject {
             mainImageView.image = UIImage(named: trueSubject.imagePath)
             mainLabel.text = trueSubject.name
             nameLabel1.text = "Teachers"
             nameLabel2.text = "Students"
+            stringElement = "esta asignatura"
         }
     }
     func configureCollectionViews() {

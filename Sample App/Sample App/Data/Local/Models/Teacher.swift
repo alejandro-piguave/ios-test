@@ -13,15 +13,7 @@ enum TeacherType: String {
     
 }
 
-class Teacher: Hashable {
-    
-    static func == (lhs: Teacher, rhs: Teacher) -> Bool {
-        return ObjectIdentifier(lhs) == ObjectIdentifier(rhs)
-    }
-    
-    func hash(into hasher: inout Hasher) {
-        return hasher.combine(ObjectIdentifier(self))
-    }
+class Teacher: Person {
     
     var subjects: [Subject] {
         get {
@@ -36,20 +28,12 @@ class Teacher: Hashable {
         }
     }
     
-    var name: String = ""
-    var email: String = ""
     var type: TeacherType = TeacherType.extern
-    var imagePath: String = ""
     
     convenience init(_ name: String = "", email: String = "", imagePath: String, type: TeacherType = TeacherType.extern) {
-        self.init()
-        
-        self.imagePath = imagePath
-        self.name = name
-        self.email = email
+        self.init(name, email, imagePath)
+
         self.type = type
-        
-        
     }
     
 }

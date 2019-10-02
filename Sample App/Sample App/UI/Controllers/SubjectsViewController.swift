@@ -17,6 +17,10 @@ class SubjectsViewController: UIViewController{
         configureCollectionView()
     }
     
+    
+    override func viewWillAppear(_ animated: Bool) {
+        collectionView.reloadData()
+    }
 }
 
 extension SubjectsViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
